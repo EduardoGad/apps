@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2d34; /* Cinza com um toque de azul */
+    color: #ffffff; /* Cor do texto em branco para melhor contraste */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+section {
+    padding: 20px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.intro {
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.intro h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.image {
+    max-width: 40%;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 2s ease-in-out infinite; /* Movimento sutil na imagem */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.produto {
+    background-color: #3b3f47;
+    border: 2px solid #4a4f59;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.produto h3 {
+    color: #ffffff;
+}
+
+.produto p {
+    color: #d1d1d1;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #176f2a;
+}
+
+#beneficios {
+    text-align: center;
+    padding: 20px;
+    background-color: #3b3f47;
+    border-top: 1px solid #4a4f59;
+}
+
+#beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#beneficios ul li {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    font-size: 36px;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #ffffff; /* Cor do ícone verde para combinar com os botões */
+}
+
+.highlight{
+        color: #4FC3F7; /* Azul claro */
+    }
